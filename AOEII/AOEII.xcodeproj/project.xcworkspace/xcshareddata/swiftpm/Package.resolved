@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SLog",
+        "repositoryURL": "https://github.com/zmeriksen/SLog.git",
+        "state": {
+          "branch": "master",
+          "revision": "d631e0a6d679d9b846c47ae54fe77280d1306991",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftUIKit",
+        "repositoryURL": "https://github.com/zmeriksen/SwiftUIKit.git",
+        "state": {
+          "branch": "develop",
+          "revision": "82ed2533c34a8a519ce928412c0ead43c10b255f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

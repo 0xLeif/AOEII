@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		299EA5FF23A58AE800D9E7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA5FE23A58AE800D9E7BA /* AppDelegate.swift */; };
 		299EA60123A58AE800D9E7BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA60023A58AE800D9E7BA /* SceneDelegate.swift */; };
-		299EA60323A58AE800D9E7BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA60223A58AE800D9E7BA /* ViewController.swift */; };
+		299EA60323A58AE800D9E7BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA60223A58AE800D9E7BA /* BaseViewController.swift */; };
 		299EA60623A58AE800D9E7BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299EA60423A58AE800D9E7BA /* Main.storyboard */; };
 		299EA60823A58AEA00D9E7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299EA60723A58AEA00D9E7BA /* Assets.xcassets */; };
 		299EA60B23A58AEA00D9E7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299EA60923A58AEA00D9E7BA /* LaunchScreen.storyboard */; };
+		299EA61423A58B2300D9E7BA /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 299EA61323A58B2300D9E7BA /* SwiftUIKit */; };
+		299EA61723A58B3D00D9E7BA /* SLog in Frameworks */ = {isa = PBXBuildFile; productRef = 299EA61623A58B3D00D9E7BA /* SLog */; };
+		299EA61A23A58CAA00D9E7BA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA61923A58CAA00D9E7BA /* API.swift */; };
+		299EA61D23A58DAD00D9E7BA /* Civilization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA61C23A58DAD00D9E7BA /* Civilization.swift */; };
+		299EA62323A58E8200D9E7BA /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62223A58E8200D9E7BA /* Unit.swift */; };
+		299EA62623A58F8C00D9E7BA /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62523A58F8C00D9E7BA /* Structure.swift */; };
+		299EA62923A5907D00D9E7BA /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62823A5907D00D9E7BA /* Technology.swift */; };
+		299EA62C23A5914400D9E7BA /* NotFoundError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62B23A5914400D9E7BA /* NotFoundError.swift */; };
+		299EA62F23A5916E00D9E7BA /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62E23A5916E00D9E7BA /* Cost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		299EA5FB23A58AE800D9E7BA /* AOEII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOEII.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299EA5FE23A58AE800D9E7BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		299EA60023A58AE800D9E7BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		299EA60223A58AE800D9E7BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		299EA60223A58AE800D9E7BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		299EA60523A58AE800D9E7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		299EA60723A58AEA00D9E7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299EA60A23A58AEA00D9E7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		299EA60C23A58AEA00D9E7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299EA61923A58CAA00D9E7BA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		299EA61C23A58DAD00D9E7BA /* Civilization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civilization.swift; sourceTree = "<group>"; };
+		299EA62223A58E8200D9E7BA /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		299EA62523A58F8C00D9E7BA /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		299EA62823A5907D00D9E7BA /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
+		299EA62B23A5914400D9E7BA /* NotFoundError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundError.swift; sourceTree = "<group>"; };
+		299EA62E23A5916E00D9E7BA /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299EA61423A58B2300D9E7BA /* SwiftUIKit in Frameworks */,
+				299EA61723A58B3D00D9E7BA /* SLog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,86 @@
 		299EA5FD23A58AE800D9E7BA /* AOEII */ = {
 			isa = PBXGroup;
 			children = (
+				299EA61B23A58D9E00D9E7BA /* Models */,
+				299EA61823A58C9F00D9E7BA /* API */,
 				299EA5FE23A58AE800D9E7BA /* AppDelegate.swift */,
 				299EA60023A58AE800D9E7BA /* SceneDelegate.swift */,
-				299EA60223A58AE800D9E7BA /* ViewController.swift */,
+				299EA60223A58AE800D9E7BA /* BaseViewController.swift */,
 				299EA60423A58AE800D9E7BA /* Main.storyboard */,
 				299EA60723A58AEA00D9E7BA /* Assets.xcassets */,
 				299EA60923A58AEA00D9E7BA /* LaunchScreen.storyboard */,
 				299EA60C23A58AEA00D9E7BA /* Info.plist */,
 			);
 			path = AOEII;
+			sourceTree = "<group>";
+		};
+		299EA61823A58C9F00D9E7BA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				299EA61923A58CAA00D9E7BA /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		299EA61B23A58D9E00D9E7BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				299EA62D23A5915E00D9E7BA /* Cost */,
+				299EA62A23A5912F00D9E7BA /* Errors */,
+				299EA62723A5906900D9E7BA /* Technology */,
+				299EA62423A58F7E00D9E7BA /* Structure */,
+				299EA62123A58E6000D9E7BA /* Unit */,
+				299EA62023A58E5A00D9E7BA /* Civilization */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		299EA62023A58E5A00D9E7BA /* Civilization */ = {
+			isa = PBXGroup;
+			children = (
+				299EA61C23A58DAD00D9E7BA /* Civilization.swift */,
+			);
+			path = Civilization;
+			sourceTree = "<group>";
+		};
+		299EA62123A58E6000D9E7BA /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				299EA62223A58E8200D9E7BA /* Unit.swift */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		299EA62423A58F7E00D9E7BA /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				299EA62523A58F8C00D9E7BA /* Structure.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		299EA62723A5906900D9E7BA /* Technology */ = {
+			isa = PBXGroup;
+			children = (
+				299EA62823A5907D00D9E7BA /* Technology.swift */,
+			);
+			path = Technology;
+			sourceTree = "<group>";
+		};
+		299EA62A23A5912F00D9E7BA /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				299EA62B23A5914400D9E7BA /* NotFoundError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		299EA62D23A5915E00D9E7BA /* Cost */ = {
+			isa = PBXGroup;
+			children = (
+				299EA62E23A5916E00D9E7BA /* Cost.swift */,
+			);
+			path = Cost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +172,10 @@
 			dependencies = (
 			);
 			name = AOEII;
+			packageProductDependencies = (
+				299EA61323A58B2300D9E7BA /* SwiftUIKit */,
+				299EA61623A58B3D00D9E7BA /* SLog */,
+			);
 			productName = AOEII;
 			productReference = 299EA5FB23A58AE800D9E7BA /* AOEII.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +204,10 @@
 				Base,
 			);
 			mainGroup = 299EA5F223A58AE800D9E7BA;
+			packageReferences = (
+				299EA61223A58B2300D9E7BA /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+				299EA61523A58B3D00D9E7BA /* XCRemoteSwiftPackageReference "SLog" */,
+			);
 			productRefGroup = 299EA5FC23A58AE800D9E7BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299EA60323A58AE800D9E7BA /* ViewController.swift in Sources */,
+				299EA60323A58AE800D9E7BA /* BaseViewController.swift in Sources */,
+				299EA61D23A58DAD00D9E7BA /* Civilization.swift in Sources */,
+				299EA62323A58E8200D9E7BA /* Unit.swift in Sources */,
 				299EA5FF23A58AE800D9E7BA /* AppDelegate.swift in Sources */,
+				299EA61A23A58CAA00D9E7BA /* API.swift in Sources */,
+				299EA62C23A5914400D9E7BA /* NotFoundError.swift in Sources */,
+				299EA62623A58F8C00D9E7BA /* Structure.swift in Sources */,
 				299EA60123A58AE800D9E7BA /* SceneDelegate.swift in Sources */,
+				299EA62F23A5916E00D9E7BA /* Cost.swift in Sources */,
+				299EA62923A5907D00D9E7BA /* Technology.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +442,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		299EA61223A58B2300D9E7BA /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zmeriksen/SwiftUIKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		299EA61523A58B3D00D9E7BA /* XCRemoteSwiftPackageReference "SLog" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zmeriksen/SLog.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		299EA61323A58B2300D9E7BA /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 299EA61223A58B2300D9E7BA /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
+		};
+		299EA61623A58B3D00D9E7BA /* SLog */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 299EA61523A58B3D00D9E7BA /* XCRemoteSwiftPackageReference "SLog" */;
+			productName = SLog;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 299EA5F323A58AE800D9E7BA /* Project object */;
 }
