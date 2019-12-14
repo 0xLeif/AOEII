@@ -18,3 +18,7 @@ struct Civilization: Codable {
     let team_bonus: String
     let civilization_bonus: [String]
 }
+
+struct CivilizationList: Codable {
+    let civilizations: [Civilization]?
+}

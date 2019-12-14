@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Cost: Codable {
+    let wood: Int?
+    let food: Int?
+    let stone: Int?
+    let gold: Int?
+}
+

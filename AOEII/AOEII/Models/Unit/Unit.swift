@@ -7,3 +7,33 @@
 //
 
 import Foundation
+
+struct Unit: Codable {
+    // Required
+    let id: Int
+    let name: String
+    let expansion: String
+    let age: String
+    let created_in: String
+    let cost: Cost
+    let build_time: Int
+    let reload_time: Double
+    let attack_delay: Double?
+    let movement_rate: Double
+    let line_of_sight: Int
+    let hit_points: Int
+    let attack: Int
+    let armor: Int
+    let accuracy: String
+    let blast_radius: Double
+    // Optional
+    let description: String?
+    let range: String?
+    let attack_bonus: [String]?
+    let armor_bonus: [String]?
+    let search_radius: Int?
+}
+
+struct UnitList: Codable {
+    let units: [Unit]?
+}

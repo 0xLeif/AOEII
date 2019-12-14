@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct NotFoundError: Error {
+    let message: String
+}
