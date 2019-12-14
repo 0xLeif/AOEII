@@ -46,14 +46,52 @@ class API {
         case units
         case structures
         case technologies
+        case civilization
+        case unit
+        case structure
+        case technology
     }
     
     static var instance: API = {
         API()
     }()
     // Configuations
-    let path: String = "https://age-of-empires-2-api.herokuapp.com/api/v1/"
+    let path: String = "https://age-of-empires-2-api.herokuapp.com/api/v1"
     
     // Lazy Variables
     lazy var url: URL = URL(string: path)!
+}
+
+extension API {
+    func civilizations() -> AnyPublisher<CivilizationList, Error> {
+        var request = url.request(forRoute: .civilizations)
+        
+        return request.dataTaskPublish()
+            .mapError { $0 as Error }
+            .compactMap {
+                do {
+                    return try JSONDecoder().decode(CivilizationList.self, from: $0.data)
+                } catch {
+                    log.error.entry(error.localizedDescription, $0)
+                    return nil
+                }
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    func civilization(forID id: Int) -> AnyPublisher<Civilization, Error> {
+        var request = url.request(forRoute: .civilization, withID: id)
+        
+        return request.dataTaskPublish()
+            .mapError { $0 as Error }
+            .compactMap {
+                do {
+                    return try JSONDecoder().decode(Civilization.self, from: $0.data)
+                } catch {
+                    log.error.entry(error.localizedDescription, $0)
+                    return nil
+                }
+        }
+        .eraseToAnyPublisher()
+    }
 }
