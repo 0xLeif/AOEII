@@ -17,6 +17,10 @@ class CivilizationDetailView: UIView {
         self.civilization = civ
         super.init(frame: .zero)
         
+        log.debug.entry {
+            "Init AOEII CivilizationDetailView(civ: \(civ.name))"
+        }
+        
         Navigate.shared.set(title: civ.name)
         
         embed {

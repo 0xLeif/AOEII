@@ -19,7 +19,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         log.debug.entry {
-            "Init AOEII ViewController"
+            "Init AOEII BaseViewController"
         }
         
         Navigate.shared.configure(controller: navigationController)

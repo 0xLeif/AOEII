@@ -24,7 +24,7 @@ class CivilizationTableView: UIViewController {
         super.viewDidLoad()
         
         log.debug.entry {
-            "Init AOEII ViewController"
+            "Init AOEII CivilizationTableView"
         }
         
         Navigate.shared.configure(controller: navigationController)
