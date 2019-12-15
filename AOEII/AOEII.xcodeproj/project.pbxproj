@@ -22,6 +22,8 @@
 		299EA62923A5907D00D9E7BA /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62823A5907D00D9E7BA /* Technology.swift */; };
 		299EA62C23A5914400D9E7BA /* NotFoundError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62B23A5914400D9E7BA /* NotFoundError.swift */; };
 		299EA62F23A5916E00D9E7BA /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA62E23A5916E00D9E7BA /* Cost.swift */; };
+		299EA8D023A6BAB200D9E7BA /* CivilizationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA8CF23A6BAB200D9E7BA /* CivilizationTableViewController.swift */; };
+		299EA8D223A6BF6100D9E7BA /* CivilizationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA8D123A6BF6100D9E7BA /* CivilizationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		299EA62823A5907D00D9E7BA /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		299EA62B23A5914400D9E7BA /* NotFoundError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundError.swift; sourceTree = "<group>"; };
 		299EA62E23A5916E00D9E7BA /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
+		299EA8CF23A6BAB200D9E7BA /* CivilizationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationTableViewController.swift; sourceTree = "<group>"; };
+		299EA8D123A6BF6100D9E7BA /* CivilizationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		299EA5FD23A58AE800D9E7BA /* AOEII */ = {
 			isa = PBXGroup;
 			children = (
+				299EA8CD23A6BA7B00D9E7BA /* Views */,
 				299EA61B23A58D9E00D9E7BA /* Models */,
 				299EA61823A58C9F00D9E7BA /* API */,
 				299EA5FE23A58AE800D9E7BA /* AppDelegate.swift */,
@@ -154,6 +159,23 @@
 				299EA62E23A5916E00D9E7BA /* Cost.swift */,
 			);
 			path = Cost;
+			sourceTree = "<group>";
+		};
+		299EA8CD23A6BA7B00D9E7BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				299EA8CE23A6BA8200D9E7BA /* Civilization */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		299EA8CE23A6BA8200D9E7BA /* Civilization */ = {
+			isa = PBXGroup;
+			children = (
+				299EA8CF23A6BAB200D9E7BA /* CivilizationTableViewController.swift */,
+				299EA8D123A6BF6100D9E7BA /* CivilizationDetailView.swift */,
+			);
+			path = Civilization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +261,13 @@
 				299EA61D23A58DAD00D9E7BA /* Civilization.swift in Sources */,
 				299EA62323A58E8200D9E7BA /* Unit.swift in Sources */,
 				299EA5FF23A58AE800D9E7BA /* AppDelegate.swift in Sources */,
+				299EA8D223A6BF6100D9E7BA /* CivilizationDetailView.swift in Sources */,
 				299EA61A23A58CAA00D9E7BA /* API.swift in Sources */,
 				299EA62C23A5914400D9E7BA /* NotFoundError.swift in Sources */,
 				299EA62623A58F8C00D9E7BA /* Structure.swift in Sources */,
 				299EA60123A58AE800D9E7BA /* SceneDelegate.swift in Sources */,
 				299EA62F23A5916E00D9E7BA /* Cost.swift in Sources */,
+				299EA8D023A6BAB200D9E7BA /* CivilizationTableViewController.swift in Sources */,
 				299EA62923A5907D00D9E7BA /* Technology.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
