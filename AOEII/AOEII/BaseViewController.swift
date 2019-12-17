@@ -29,7 +29,10 @@ class BaseViewController: UIViewController {
             Table(defaultCellHeight: 60) {
                 [
                     NavButton(destination: CivilizationTableView(), style: .push) {
-                        Label("Civilization").padding()
+                        Label("Civilizations").padding()
+                    },
+                    NavButton(destination: UnitTableViewController(), style: .push) {
+                        Label("Units").padding()
                     }
                 ]
             }
