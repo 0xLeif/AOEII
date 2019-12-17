@@ -18,20 +18,20 @@ struct Unit: Codable {
     let cost: Cost
     let build_time: Int
     let reload_time: Double
-    let attack_delay: Double?
     let movement_rate: Double
     let line_of_sight: Int
     let hit_points: Int
     let attack: Int
-    let armor: Int
-    let accuracy: String
-    let blast_radius: Double
+    let armor: String
     // Optional
     let description: String?
+    let attack_delay: Double?
     let range: String?
     let attack_bonus: [String]?
     let armor_bonus: [String]?
     let search_radius: Int?
+    let accuracy: String?
+    let blast_radius: Double?
 }
 
 struct UnitList: Codable {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2998DF0323A858560017269B /* UnitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998DF0223A858560017269B /* UnitTableViewController.swift */; };
+		2998DF0523A858640017269B /* UnitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998DF0423A858640017269B /* UnitDetailView.swift */; };
 		299EA5FF23A58AE800D9E7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA5FE23A58AE800D9E7BA /* AppDelegate.swift */; };
 		299EA60123A58AE800D9E7BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA60023A58AE800D9E7BA /* SceneDelegate.swift */; };
 		299EA60323A58AE800D9E7BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299EA60223A58AE800D9E7BA /* BaseViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2998DF0223A858560017269B /* UnitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTableViewController.swift; sourceTree = "<group>"; };
+		2998DF0423A858640017269B /* UnitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitDetailView.swift; sourceTree = "<group>"; };
 		299EA5FB23A58AE800D9E7BA /* AOEII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOEII.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299EA5FE23A58AE800D9E7BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		299EA60023A58AE800D9E7BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2998DF0123A8583E0017269B /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				2998DF0223A858560017269B /* UnitTableViewController.swift */,
+				2998DF0423A858640017269B /* UnitDetailView.swift */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
 		299EA5F223A58AE800D9E7BA = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +177,7 @@
 		299EA8CD23A6BA7B00D9E7BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2998DF0123A8583E0017269B /* Unit */,
 				299EA8CE23A6BA8200D9E7BA /* Civilization */,
 			);
 			path = Views;
@@ -259,6 +273,8 @@
 			files = (
 				299EA60323A58AE800D9E7BA /* BaseViewController.swift in Sources */,
 				299EA61D23A58DAD00D9E7BA /* Civilization.swift in Sources */,
+				2998DF0323A858560017269B /* UnitTableViewController.swift in Sources */,
+				2998DF0523A858640017269B /* UnitDetailView.swift in Sources */,
 				299EA62323A58E8200D9E7BA /* Unit.swift in Sources */,
 				299EA5FF23A58AE800D9E7BA /* AppDelegate.swift in Sources */,
 				299EA8D223A6BF6100D9E7BA /* CivilizationDetailView.swift in Sources */,
