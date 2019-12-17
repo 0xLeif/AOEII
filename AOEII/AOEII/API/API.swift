@@ -94,4 +94,39 @@ extension API {
         }
         .eraseToAnyPublisher()
     }
+    
+    func units() -> AnyPublisher<UnitList, Error> {
+        var request = url.request(forRoute: .units)
+        
+        return request.dataTaskPublish()
+            .mapError { $0 as Error }
+            .compactMap {
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: $0.data, options: []) as? [String: Any] {
+                        print(json)
+                    }
+                    return try JSONDecoder().decode(UnitList.self, from: $0.data)
+                } catch {
+                    log.error.entry(error, $0)
+                    return nil
+                }
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    func unit(forID id: Int) -> AnyPublisher<Unit, Error> {
+        var request = url.request(forRoute: .unit, withID: id)
+        
+        return request.dataTaskPublish()
+            .mapError { $0 as Error }
+            .compactMap {
+                do {
+                    return try JSONDecoder().decode(Unit.self, from: $0.data)
+                } catch {
+                    log.error.entry(error.localizedDescription, $0)
+                    return nil
+                }
+        }
+        .eraseToAnyPublisher()
+    }
 }
